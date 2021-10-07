@@ -18,7 +18,13 @@ Os arquivos são de HTML simples que roda nos navegadores.
 |entre 80 - 89   |   B  |
 |entre 70 - 79   |   C  |
 |entre 60 - 69   |   D  |
-|menor que 60    |   F  |
+|menor que 60    |   E  |
+
+#### _Suluções encontradas_
+
+* uso do if, else if else
+
+* uso de funções
 
 ### Fluxo de Caixa Familiar
 

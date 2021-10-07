@@ -1,0 +1,32 @@
+function getScore(score) {
+  let gradeA = score >= 90 && score <= 100
+  let gradeB = score < 90 && score >= 80
+  let gradeC = score < 80 && score >= 70
+  let gradeD = score < 70 && score >= 60
+  let gradeE = score < 60 && score >= 0
+
+  if (gradeA) {
+    finalScore = "You got an 'A'"
+  } else if (gradeB) {
+    finalScore = "You got an 'B'"
+  } else if (gradeC) {
+    finalScore = "You got an 'C'"
+  } else if (gradeD) {
+    finalScore = "You got an 'D'"
+  } else if (gradeE) {
+    finalScore = "You got an 'E'"
+  } else {
+    finalScore = 'Nota inválida'
+  }
+
+  return finalScore
+}
+
+console.log(getScore(101))
+console.log(getScore(-1))
+console.log(getScore(99))
+console.log(getScore(89))
+console.log(getScore(79))
+console.log(getScore(69))
+console.log(getScore(59))
+console.log(getScore(0))
