@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>challenge Discover - Rocketseat</title>
+    <title>Rocketseat Discover Challenges</title>
     <style>
       body {
         background-color: steelblue;
@@ -18,10 +18,23 @@
   </head>
   <body>
     <h1>
-      Chalanges Discover from
-      <a href="https://app.rocketseat.com.br/discover">Rocketseat's Classes</a>
+      <a href="https://app.rocketseat.com.br/discover">Rocketseat</a> Discover
+      Challenges
     </h1>
-    <h2>Javascript Chalanges</h2>
+    <form action="">
+      <input type="text" id="nameStudent" placeholder="Student Name" />
+      <div>
+        <p>Informe the Student Score:</p>
+        <input type="number" id="score" placeholder="informe the score" />
+        <button onclick="send()">SEND</button>
+        <p class="message">It will only be accepted score in the range between 0 and 100</p>
+      </div>
+    </form>
+    <div id="output">
+      <p id="grade">Youre grade will be shown here.</p>
+      <p id="gradeMessage"></p>
+    </div>
+
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@ function getScore(score) {
   return finalScore
 }
 
-console.log(getScore(101))
+
 console.log(getScore(-1))
 console.log(getScore(99))
 console.log(getScore(89))
