@@ -14,7 +14,7 @@
       a {
         color: white;
       }
-      section{
+      section {
         display: grid;
         justify-items: center;
         margin: 10px;
@@ -38,15 +38,33 @@
           <p>Informe the Student Score:</p>
           <input type="number" id="score" placeholder="informe the score" />
           <button>SEND</button>
-          <p class="message">It will only be accepted score in the range between 0 and 100</p>
+          <p class="message">
+            It will only be accepted score in the range between 0 and 100
+          </p>
         </div>
       </form>
-      <div id="output">
+      <div>
         <p id="grade">Youre grade will be shown here.</p>
         <p id="gradeMessage"></p>
       </div>
     </section>
+    <hr />
+    <section id="familyCashFlow">
+      <h2>Family Cash Flow</h2>
+      <form>
+        <input type="number" id="income" placeholder="Inform your incomes" />
+        <input type="button" value="Submit" id="submitInc" />
+        <br />
+        <input type="number" id="expenses" placeholder="Inform your expenses" />
+        <input type="button" value="Submit" id="submitExp" />
+
+        <div>
+          <p>Youre balance will be shown here.</p>
+        </div>
+      </form>
+    </section>
 
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
+    <script src="familyCashFlow/familyCashFlow.js"></script>
   </body>
 </html>

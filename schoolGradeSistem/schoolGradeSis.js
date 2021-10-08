@@ -1,6 +1,6 @@
 let sumitButton = document.querySelector('form div button')
 let formInput = document.querySelector('form div input#score')
-let output = document.querySelector('div#output p#gradeMessage')
+let output = document.querySelector('div p#gradeMessage')
 
 sumitButton.addEventListener('click', run)
 
