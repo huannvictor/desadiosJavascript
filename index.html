@@ -14,6 +14,14 @@
       a {
         color: white;
       }
+      section{
+        display: grid;
+        justify-items: center;
+        margin: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
@@ -21,19 +29,23 @@
       <a href="https://app.rocketseat.com.br/discover">Rocketseat</a> Discover
       Challenges
     </h1>
-    <form action="">
-      <input type="text" id="nameStudent" placeholder="Student Name" />
-      <div>
-        <p>Informe the Student Score:</p>
-        <input type="number" id="score" placeholder="informe the score" />
-        <button>SEND</button>
-        <p class="message">It will only be accepted score in the range between 0 and 100</p>
+
+    <section id="GradeSistem">
+      <h2>School Grade Simtem</h2>
+      <form action="">
+        <input type="text" id="nameStudent" placeholder="Student Name" />
+        <div>
+          <p>Informe the Student Score:</p>
+          <input type="number" id="score" placeholder="informe the score" />
+          <button>SEND</button>
+          <p class="message">It will only be accepted score in the range between 0 and 100</p>
+        </div>
+      </form>
+      <div id="output">
+        <p id="grade">Youre grade will be shown here.</p>
+        <p id="gradeMessage"></p>
       </div>
-    </form>
-    <div id="output">
-      <p id="grade">Youre grade will be shown here.</p>
-      <p id="gradeMessage"></p>
-    </div>
+    </section>
 
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
   </body>
