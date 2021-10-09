@@ -82,5 +82,5 @@ function calculate(event) {
   console.log(balanceText)
 }
 
-console.log(dataValue.incomes)
-console.log(dataValue.expenses)
+// console.log(dataValue.incomes)
+// console.log(dataValue.expenses)
