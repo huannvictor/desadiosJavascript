@@ -8,6 +8,8 @@ Os arquivos são de HTML simples que roda nos navegadores.
 
 ### São eles
 
+[School Grade Sistem](#sistema-de-notas-escolares) • [Family Cash Flow](#fluxo-de-caixa-familiar) • [Celcius to Fahrenheit](#conversão-de-celcius-para-fahrenheit) • [Searching insid Arrays](#buscando-e-encontrando-dados-em-array)
+
 ----
 
 ### Sistema de Notas Escolares
@@ -24,9 +26,9 @@ Os arquivos são de HTML simples que roda nos navegadores.
 
 **Imagens do Projeto:**
 
-![Picture one](pictures/schoolGradeSistem-1.png?raw=true)
+![Screenshot](pictures/schoolGradeSistem-1.png?raw=true)
 
-![Picture two](pictures/schoolGradeSistem-2.png?raw=true)
+![Screenshot](pictures/schoolGradeSistem-2.png?raw=true)
 
 ----
 
@@ -36,11 +38,11 @@ Os arquivos são de HTML simples que roda nos navegadores.
 
 **Imagens do Projeto:**
 
-![Picture two](pictures/familyCashFlow-1.png?raw=true)
+![Screenshot](pictures/familyCashFlow-1.png?raw=true)
 
-![Picture two](pictures/familyCashFlow-2.png?raw=true)
+![Screenshot](pictures/familyCashFlow-2.png?raw=true)
 
-![Picture two](pictures/familyCashFlow-3.png?raw=true)
+![Screenshot](pictures/familyCashFlow-3.png?raw=true)
 
 ----
 
