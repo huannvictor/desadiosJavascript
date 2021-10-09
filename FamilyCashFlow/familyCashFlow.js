@@ -1,9 +1,32 @@
-let dataValue = {
-  incomes:[1500.49],
-  expenses:[1689.99],
+let family = {
+  incomes: [1500, 420, 6],
+  expenses: [9102, 435, 15]
 }
 
-let balance = dataValue.incomes - dataValue.expenses
+function sum(array) {
+  let total = 0
 
-console.log(dataValue)
-console.log(balance)
+  for (let value of array) {
+    total += value
+  }
+  return total
+}
+
+function calculateBalance() {
+  const calculateIncomes = sum(family.incomes)
+  const calculateExpenses = sum(family.expenses)
+
+  const total = calculateIncomes - calculateExpenses
+
+  let isOk = total >= 0
+
+  let balanceText = 'negativo'
+
+  if (isOk) {
+    balanceText = 'positivo'
+  }
+
+  console.log(`Seu saldo atual é ${balanceText}: ${total}`)
+}
+
+calculateBalance()
