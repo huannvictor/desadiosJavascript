@@ -1,12 +1,21 @@
-// objetct keeper
+// objetct that'll keeper the data
 let dataValue = {
-  incomes: (incomes = []),
-  expenses: (expenses = [])
+  incomes: [],
+  expenses: []
 }
 
 // informed values
 let incomeValue = document.querySelector('section form input#income')
 let expenseValue = document.querySelector('section form input#expenses')
+
+//function sum
+function sum(array) {
+  let total = 0
+  for (let value of array) {
+    total += value
+  }
+  return total
+}
 
 // buttons who'll run the functions
 let submitInc = document
@@ -55,8 +64,23 @@ function exp(event) {
 // balance calculated
 function calculate(event) {
   event.preventDefault()
+
+  const calculateIncomes = sum(dataValue.incomes)
+  const calculateExpenses = sum(dataValue.expenses)
+
+  const total = calculateIncomes - calculateExpenses
+  
+  let positive = total >= 0
+  let negative = total < 0
+
+  if (positive) {
+    balanceText = `Your balance is POSITIVE: ${total.toFixed(2)}`
+  }else if (negative) {
+    balanceText = `Your balance is NEGATIVE: ${total.toFixed(2)}`
+  }
+  writeBal.innerHTML = `${balanceText}`
+  console.log(balanceText)
 }
 
 console.log(dataValue.incomes)
 console.log(dataValue.expenses)
-//console.log(balance)
