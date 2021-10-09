@@ -7,6 +7,8 @@
     <title>Rocketseat Discover Challenges</title>
     <style>
       body {
+        display: grid;
+        justify-content: center;
         background-color: steelblue;
         color: white;
         font-family: Helvetica, Arial, sans-serif;
@@ -14,10 +16,15 @@
       a {
         color: white;
       }
-      section {
+      hr{
+        width: 100%;
+      }
+      section{
         display: grid;
         justify-items: center;
-        margin: 10px;
+        align-items: center;
+        width: 100%;
+        margin: auto;
         border: 1px solid white;
         border-radius: 10px;
         padding: 5px;
@@ -31,11 +38,11 @@
     </h1>
 
     <section id="GradeSistem">
-      <h2>School Grade Simtem</h2>
+      <h2>School Grade Sistem</h2>
       <form action="">
         <input type="text" id="nameStudent" placeholder="Student Name" />
         <div>
-          <p>Informe the Student Score:</p>
+          <p>Inform the Student Score:</p>
           <input type="number" id="score" placeholder="informe the score" />
           <button>SEND</button>
           <p class="message">
@@ -71,6 +78,5 @@
 
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
     <script src="familyCashFlow/familyCashFlowWriteOnPage.js"></script>
-    <script src="familyCashFlow/familyCashFlow.js"></script>
   </body>
 </html>

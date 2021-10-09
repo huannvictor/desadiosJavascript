@@ -7,6 +7,7 @@ sumitButton.addEventListener('click', run)
 function run(event) {
   event.preventDefault()
 
+  let student = document.querySelector('#nameStudent')
   let valueScore = Number(formInput.value)
 
   function getScore(score) {
@@ -33,8 +34,7 @@ function run(event) {
     return finalScore
   }
 
-  output.innerHTML = `${getScore(valueScore)}`
-
+  output.innerHTML = `${student.value}, ${getScore(valueScore)}`
 }
 
 // console.log(getScore(-1))
