@@ -66,24 +66,31 @@
         <input type="button" value="Submit" id="submitExp" />
         <br />
         <button id="calculate">calculate</button>
-
-        <div id="write">
-          <p>Your balance will be shown here.</p>
-          <p>Your incomes are: US$ <span id="writeInc"></span></p>
-          <p>Your expenses are: US$ <span id="writeExp"></span></p>
-          <p><span id="writeBal">Youre balance is: US$ </span></p>
-        </div>
       </form>
+      <div>
+        <p>Your balance will be shown here.</p>
+        <p>Your incomes are: US$ <span id="writeInc"></span></p>
+        <p>Your expenses are: US$ <span id="writeExp"></span></p>
+        <p><span id="writeBal">Youre balance is: US$ </span></p>
+      </div>
     </section>
     <hr />
     <section id="CelsiusToFahrenheit">
       <h2>Celsius To Fahrenheit Converter</h2>
-      <input type="number" id="celcius" placeholder="Inform Degree" />
+      <input type="number" id="degreeValue" placeholder="Inform Degree" />
       <select>
-        <option value="">select the degree type</option>
+        <option>select the degree type</option>
         <option id="degreeTypeCelsius">celsius</option>
         <option id="degreeTypeFahrenheit">fahrenheit</option>
       </select>
+      <button id="transformButton">Transform</button>
+      <div>
+        <p>Here will be shown the final result.</p>
+        <p>
+          <span id="writeDegreeValue"></span><span id="writeDegreeType"></span
+          ><span id="writeTransformedDegree"></span>
+        </p>
+      </div>
     </section>
 
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
