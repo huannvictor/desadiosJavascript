@@ -1,32 +1,35 @@
-let degreeValue = document.querySelector('#degreeValue')
-let degreeTypeCelsius = document.querySelector('#degreeTypeCelsius')
-let degreeTypeFahrenheit = document.querySelector('#degreeTypeFahrenheit')
+// inputs
 
+let degreeValue = document.querySelector('#degreeValue')
+let degreeTypeCelsius = document.querySelector('select #degreeTypeCelsius').value
+let degreeTypeFahrenheit = document.querySelector('select #degreeTypeFahrenheit').value
 let transformButton = document
   .querySelector('#transformButton')
   .addEventListener('click', transform)
 
-function transform(degree) {
-  degree.preventDefault()
-  
-  degreeValue = Number(degreeValue.value)
+console.log(degreeValue)
+console.log(degreeTypeCelsius)
+console.log(degreeTypeFahrenheit)
 
+// verification
+let select = document.querySelector('#degreeType')
+let option = select.options[select.selectedIndex].option
+console.log(option)
 
-  const celsiusExists = degree.includes('celsius')
-  const fahrenheitExists = degree.includes('fahrenheit')
-  
-  console.log(degreeValue + degreeType)
-
-  let updatedDegree
-
-  if (degreeTypeCelsius = 'celsius') {
-    updatedDegree = degree
-    formula = celsius => (celsius * 9) / 5 + 32
-  } else if (degreeTypeFahrenheit = 'fahrenheit') {
-    updatedDegree = degree
-    formula = fahrenheit => ((fahrenheit - 32) * 5) / 9
-  }
-  return formula(updatedDegree)
-
+if (degreeTypeCelsius.selectedIndex != "") {
+  degreeType = ' celsius'
+  console.log(degreeType)
+} else if (degreeTypeFahrenheit.selectedIndex != "") {
+  degreeType = ' fahrenheit'
+  console.log(degreeType)
 }
 
+function transform() {
+  let newDegreeValue    = Number(degreeValue.value)
+  let writeDegreeValue  = document.querySelector('#writeDegreeValue').innerHTML = newDegreeValue
+  let writeDegreeType   = document.querySelector('#writeDegreeType').innerHTML = option
+}
+
+// outputs
+
+let writeTransformedDegree = document.querySelector('#writeTransformedDegree')
