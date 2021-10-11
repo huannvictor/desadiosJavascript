@@ -1,4 +1,4 @@
-# Desfios em Javascript
+# Desafios em Javascript
 
 ## Discover da [Rocketseat](http://www.rocketseat.com.br)
 
