@@ -22,15 +22,15 @@ function transform() {
     TransformedDegree = (outDegreeValue - 32) * (5/9)
     newDegreeType = " fahrenheit"
   }else if (degreeType.options[degreeType.selectedIndex].value == "fahrenheit"){
-    degreeType = " fahrenheit → "
+    degreeType = "º fahrenheit → "
     TransformedDegree = (outDegreeValue*9)/5+32
-    newDegreeType = " celsius"
+    newDegreeType = "º celsius"
   }else{
     degreeType = " ⨂"
     alert('please, select a valid degree')
   }
   let writeDegreeValue = (document.querySelector('#writeDegreeValue').innerHTML = outDegreeValue + degreeType)
-  let writeTransformedDegree = document.querySelector('#writeTransformedDegree').innerHTML = TransformedDegree + newDegreeType
+  let writeTransformedDegree = document.querySelector('#writeTransformedDegree').innerHTML = TransformedDegree.toFixed(2) + newDegreeType
 }
 
 // outputs
