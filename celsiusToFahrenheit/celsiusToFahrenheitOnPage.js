@@ -16,7 +16,7 @@ function transform(converter) {
   let degreeType = document.querySelector('#degreeType')
   if (degreeType.options[degreeType.selectedIndex].value == "celsius"){
     degreeType = "celsius → "
-      TransformedDegree = (outDegreeValue * (9/5) + 32)
+    TransformedDegree = (outDegreeValue * (9/5) + 32)
     newDegreeType = "fahrenheit"
   }else if (degreeType.options[degreeType.selectedIndex].value == "fahrenheit"){
     degreeType = "fahrenheit → "
