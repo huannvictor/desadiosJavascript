@@ -1,8 +1,6 @@
 // inputs
 
 let degreeValue = document.querySelector('#degreeValue')
-let degreeTypeCelsius = document.querySelector('select #degreeTypeCelsius').value
-let degreeTypeFahrenheit = document.querySelector('select #degreeTypeFahrenheit').value
 let transformButton = document
   .querySelector('#transformButton')
   .addEventListener('click', transform)
@@ -12,24 +10,28 @@ console.log(degreeTypeCelsius)
 console.log(degreeTypeFahrenheit)
 
 // verification
-let select = document.querySelector('#degreeType')
-let option = select.options[select.selectedIndex].option
-console.log(option)
-
-if (degreeTypeCelsius.selectedIndex != "") {
-  degreeType = ' celsius'
-  console.log(degreeType)
-} else if (degreeTypeFahrenheit.selectedIndex != "") {
-  degreeType = ' fahrenheit'
-  console.log(degreeType)
-}
 
 function transform() {
-  let newDegreeValue    = Number(degreeValue.value)
-  let writeDegreeValue  = document.querySelector('#writeDegreeValue').innerHTML = newDegreeValue
-  let writeDegreeType   = document.querySelector('#writeDegreeType').innerHTML = option
+  let outDegreeValue = Number(degreeValue.value)
+  let TransformedDegree
+  let newDegreeType
+
+  let degreeType = document.querySelector('#degreeType')
+  if (degreeType.options[degreeType.selectedIndex].value == "celsius"){
+    degreeType = " celsius → "
+    TransformedDegree = (outDegreeValue - 32) * (5/9)
+    newDegreeType = " fahrenheit"
+  }else if (degreeType.options[degreeType.selectedIndex].value == "fahrenheit"){
+    degreeType = " fahrenheit → "
+    TransformedDegree = (outDegreeValue*9)/5+32
+    newDegreeType = " celsius"
+  }else{
+    degreeType = " ⨂"
+    alert('please, select a valid degree')
+  }
+  let writeDegreeValue = (document.querySelector('#writeDegreeValue').innerHTML = outDegreeValue + degreeType)
+  let writeTransformedDegree = document.querySelector('#writeTransformedDegree').innerHTML = TransformedDegree + newDegreeType
 }
 
 // outputs
 
-let writeTransformedDegree = document.querySelector('#writeTransformedDegree')
