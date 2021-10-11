@@ -77,13 +77,15 @@
     <hr />
     <section id="CelsiusToFahrenheit">
       <h2>Celsius To Fahrenheit Converter</h2>
-      <input type="number" id="degreeValue" placeholder="Inform Degree" />
-      <select id="degreeType">
-        <option>select the degree type</option>
-        <option id="degreeTypeCelsius">celsius</option>
-        <option id="degreeTypeFahrenheit">fahrenheit</option>
-      </select>
-      <button id="transformButton">Transform</button>
+      <form>
+        <input type="number" id="degreeValue" placeholder="Inform Degree" />
+        <select id="degreeType">
+          <option>select the degree type</option>
+          <option id="degreeTypeCelsius">celsius</option>
+          <option id="degreeTypeFahrenheit">fahrenheit</option>
+        </select>
+        <button id="transformButton">Transform</button>
+      </form>
       <div>
         <p>Here will be shown the final result.</p>
         <p>
@@ -91,6 +93,10 @@
           ><span id="writeTransformedDegree"></span>
         </p>
       </div>
+    </section>
+    <hr>
+    <section id="fetchingDataInArays">
+
     </section>
 
     <script src="schoolGradeSistem/schoolGradeSis.js"></script>
