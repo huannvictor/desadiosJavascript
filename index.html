@@ -5,31 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocketseat Discover Challenges</title>
-    <style>
-      body {
-        display: grid;
-        justify-content: center;
-        background-color: steelblue;
-        color: white;
-        font-family: Helvetica, Arial, sans-serif;
-      }
-      a {
-        color: white;
-      }
-      hr {
-        width: 100%;
-      }
-      section {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>
@@ -39,42 +15,42 @@
 
     <section id="GradeSistem">
       <h2>School Grade Sistem</h2>
-      <form action="">
+      <form>
         <input type="text" id="nameStudent" placeholder="Student Name" />
         <div>
           <p>Inform the Student Score:</p>
-          <input type="number" id="score" placeholder="informe the score" />
-          <button>SEND</button>
+          <input type="number"id="score" placeholder="informe the score" />
+          <button  class="button" >send</button>
           <p class="message">
             It will only be accepted score in the range between 0 and 100
           </p>
         </div>
       </form>
-      <div>
+      <div class='output'>
         <p id="grade">Youre grade will be shown here.</p>
         <p id="gradeMessage"></p>
       </div>
     </section>
-    <hr />
+    
     <section id="familyCashFlow">
       <h2>Family Cash Flow</h2>
       <form>
         <input type="number" id="income" placeholder="Inform your incomes" />
-        <input type="button" value="Submit" id="submitInc" />
+        <input type="button" value="Submit"  class="button" id="submitInc" />
         <br />
         <input type="number" id="expenses" placeholder="Inform your expenses" />
-        <input type="button" value="Submit" id="submitExp" />
+        <input type="button" value="Submit"  class="button"  id="submitExp" />
         <br />
-        <button id="calculate">calculate</button>
+        <button id="calculate"  class="button" >calculate</button>
       </form>
-      <div>
+      <div class='output'>
         <p>Your balance will be shown here.</p>
         <p>Your incomes are: US$ <span id="writeInc"></span></p>
         <p>Your expenses are: US$ <span id="writeExp"></span></p>
         <p><span id="writeBal">Youre balance is: US$ </span></p>
       </div>
     </section>
-    <hr />
+    
     <section id="CelsiusToFahrenheit">
       <h2>Celsius To Fahrenheit Converter</h2>
       <form>
@@ -84,9 +60,9 @@
           <option id="degreeTypeCelsius">celsius</option>
           <option id="degreeTypeFahrenheit">fahrenheit</option>
         </select>
-        <button id="transformButton">Transform</button>
+        <button id="transformButton" class="button" >Transform</button>
       </form>
-      <div>
+      <div class='output'>
         <p>Here will be shown the final result.</p>
         <p>
           <span id="writeDegreeValue"></span><span id="writeDegreeType"></span
@@ -94,11 +70,11 @@
         </p>
       </div>
     </section>
-    <hr />
+    
     <section id="fetchingDataInArays">
       <h2>Fetching Data In Arays</h2>
-      <div class="left">
-        <h3></span> categories: <span id="writeTotalCategories"></h3>
+      <div class='output'>
+        <h3></span> Categories: <span id="writeTotalCategories"></h3>
         <ul id="writeCategories"></ul>
           <li>Money: <span id="writeCategoryMon">xx</span> titles</li>
           <li>
@@ -117,9 +93,9 @@
           <option>Augusto Cury</option>
           <option>Stephen R. Covey</option>
         </select>
-        <button id="show">show</button>
+        <button id="show" class="button" >show</button>
       </form>
-      <div >
+      <div class='output'>
         <p id="authorsOutput">Here is the list of the Author's Books</p>
       </div>
     </section>

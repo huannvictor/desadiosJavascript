@@ -78,7 +78,7 @@ function show(showAuthor) {
       }
     }
     let authorsOutput = document.querySelector('#authorsOutput')
-    .innerHTML=`<strong>Books of ${author}:</strong><br>` + books.join(`<br>`)
+    .innerHTML=`<strong>Books of ${author}:</strong><br>` + `<p>`+books.join(`<p>`)
   }
   booksOfAuthor(authorOp)
 }
