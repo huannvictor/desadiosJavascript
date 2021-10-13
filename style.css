@@ -13,6 +13,26 @@ body {
   justify-content: center;
   align-content: center;
 }
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.7em;
+  box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.2);
+}
+li a {
+  background: linear-gradient(15deg, rgba(134, 207, 189, 0.781), #5976d600);
+  padding: 0.7em;
+  border-radius: 0.5rem;
+}
+li a:hover {
+  background: linear-gradient(15deg, #40ddb6d8, #2850d200);
+}
 h1,
 a {
   color: #fff;
@@ -21,8 +41,7 @@ a {
   margin: 15px auto;
 }
 h2,
-h3
- {
+h3 {
   color: steelblue;
   text-decoration: none;
   text-align: center;
@@ -36,17 +55,16 @@ section {
   padding: 0 1.5em 2em;
   position: relative;
   text-align: center;
-  transition: all 1s;
   background: aliceblue;
   box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.2);
 }
-form,
+/* form,
 .output {
   padding: 0.9em 0;
-}
+} */
 form input,
 select {
-  background:rgb(212, 236, 255);
+  background: rgb(212, 236, 255);
   color: steelblue;
   border-radius: 5rem;
   border: none;
@@ -71,18 +89,16 @@ form div {
   font-size: 1rem;
   padding: 0.3em;
   margin: 0.3em;
-  background: linear-gradient(to right, #40ddb6, #2850d2);
+  background: linear-gradient(30deg, #40ddb6, #2850d2);
   font-weight: 100;
   outline: none;
   cursor: pointer;
 }
-p:nth-child(1) {
-  padding-top: 1.3rem;
-}
-p, ul, li {
+#writeCategories,
+p,
+li {
   color: #4091dd;
+  text-align: left;
   font-size: 1.1rem;
   margin: 0.6rem 0;
-  text-align: left;
-  text-indent: 3.5em;
 }
